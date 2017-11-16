@@ -1,0 +1,86 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <fragment android:id="@+id/map"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            tools:context="com.example.reueldespiritu.anyare.MapsActivity" android:layout_weight="3"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Register an Activity at the map"
+                    android:layout_gravity="center_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mountain"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/button_montain"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rain"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/button_rain"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/gun"
+                        android:scaleType="fitCenter"
+                        android:id="@+id/button_gun"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/mountain"
+                        android:scaleType="fitCenter"
+
+                        android:id="@+id/button_mountain2"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/rain"
+                        android:scaleType="fitCenter"
+
+                        android:id="@+id/button_rain2"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+</RelativeLayout>
